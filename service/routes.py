@@ -8,8 +8,8 @@ from flask import jsonify, request, make_response, abort, url_for   # noqa; F401
 from service.models import Account
 from service.common import status  # HTTP Status Codes
 from . import app  # Import Flask application
-from flask_talisman import Talisman
-from flask_cors import CORS
+from flask_talisman import Talisman #noqa; F401
+from flask_cors import CORS # noqa: F401
 import json
 
 
