@@ -14,15 +14,16 @@ import json
 
 
 # Initialize Talisman with security headers
-talisman = Talisman(
-    app,
-    force_https=False,
-    content_security_policy={
-        'default-src': '\'self\'',
-        'object-src': '\'none\''
-    },
-    referrer_policy='strict-origin-when-cross-origin',
-)
+# talisman = Talisman(
+#     app,
+#     force_https=False,
+#     content_security_policy={
+#         'default-src': '\'self\'',
+#         'object-src': '\'none\''
+#     },
+#     referrer_policy='strict-origin-when-cross-origin',
+#     feature_policy={}
+# )
 
 # Initialize CORS
 CORS(app)
